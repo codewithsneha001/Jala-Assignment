@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Semantic Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        
+        header,
+        footer,
+        nav,
+        section,
+        article,
+        aside {
+            padding: 20px;
+            margin: 10px;
+        }
+        
+        header {
+            background-color: #343a40;
+            color: white;
+        }
+        
+        nav {
+            background-color: #f8f9fa;
+        }
+        
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        
+        section {
+            background-color: #f1f1f1;
+        }
+        
+        article {
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        
+        aside {
+            background-color: #d1ecf1;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+        }
+        
+        figure {
+            margin: 0;
+            padding: 10px;
+        }
+        
+        figcaption {
+            text-align: center;
+            font-style: italic;
+        }
+        
+        mark {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Hgroup -->
+    <header>
+        <hgroup>
+            <h1>My HTML5 Semantic Page</h1>
+            <h2>Demonstrating All Major HTML5 Tags</h2>
+        </hgroup>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#article">Article</a>
+        <a href="#aside">Aside</a>
+        <a href="#footer">Footer</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section>
+        <!-- Article -->
+        <article id="article">
+            <h2>The Importance of HTML5</h2>
+            <p>
+                HTML5 introduces many <mark>semantic elements</mark> that improve the structure and accessibility of web pages.
+            </p>
+            <p>
+                It was released around <time datetime="2014-10-28">October 28, 2014</time> and has been widely adopted.
+            </p>
+
+            <!-- Figure with Figcaption -->
+            <figure>
+                <img src="https://via.placeholder.com/400x200" alt="HTML5 Logo" width="100%" />
+                <figcaption>Figure 1: HTML5 Logo</figcaption>
+            </figure>
+        </article>
+
+        <!-- Aside -->
+        <aside id="aside">
+            <h3>Did You Know?</h3>
+            <p>The <mark>&lt;aside&gt;</mark> element is used for content that's related but not essential to the main article, like tips or side notes.</p>
+        </aside>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>&copy; <time datetime="2025-05-17">2025</time> Semantic Webpage. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

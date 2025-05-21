@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic Elements Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        header,
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav {
+            margin: 10px 0;
+            background: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        article {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+        
+        form {
+            background: #f2f2f2;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        
+        form input,
+        form select,
+        form textarea {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+        }
+        
+        form button {
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Semantic Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="#article">Article</a>
+        <a href="#table">Table</a>
+        <a href="#form">Form</a>
+    </nav>
+
+    <main>
+        <!-- Article Section -->
+        <article id="article">
+            <h2>Importance of Semantic HTML</h2>
+            <p>
+                Semantic HTML makes web pages more accessible and understandable. Elements like &lt;article&gt;, &lt;section&gt;, and &lt;nav&gt; define the structure and meaning of content.
+            </p>
+            <p><strong>Benefits:</strong> SEO friendly, better screen reader support, and cleaner code.</p>
+        </article>
+
+        <!-- Table Section -->
+        <section id="table">
+            <h2>Top 3 Programming Languages</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Language</th>
+                        <th>Popularity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>JavaScript</td>
+                        <td>High</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Python</td>
+                        <td>Very High</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Java</td>
+                        <td>Medium</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form">
+            <h2>Feedback Form</h2>
+            <form action="#">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="feedback">Your Feedback:</label>
+                <textarea id="feedback" name="feedback" rows="4"></textarea>
+
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating">
+          <option value="5">Excellent</option>
+          <option value="4">Very Good</option>
+          <option value="3">Good</option>
+          <option value="2">Average</option>
+          <option value="1">Poor</option>
+        </select>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Semantic Webpage</p>
+    </footer>
+
+</body>
+
+</html>
