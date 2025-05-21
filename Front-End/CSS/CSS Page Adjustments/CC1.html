@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table Hover</title>
+    <style>
+        table {
+            border: 2px solid black;
+            width: 50%;
+            margin: 50px auto;
+        }
+        
+        table:hover {
+            /* Change page background color when hovering over table */
+            background-color: lightgray;
+        }
+        
+        body:hover table:hover {
+            background-color: lightgray;
+        }
+        
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Sales</th>
+        </tr>
+
+        <tr>
+            <td>Alice</td>
+            <td>$5000</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>$3000</td>
+        </tr>
+    </table>
+</body>
+
+</html>

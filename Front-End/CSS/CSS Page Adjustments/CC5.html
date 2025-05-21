@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Multiple background images</title>
+    <style>
+        .multi-bg {
+            height: 400px;
+            background-image: url('https://media.licdn.com/dms/image/v2/D5622AQF9_Z5ClOvuSQ/feedshare-shrink_800/feedshare-shrink_800/0/1718955813001?e=2147483647&v=beta&t=fx2h7mmXYXVWiAglQ5X3h-88875xNsUMKxZjCQW5Muo'), url('https://media1.thehungryjpeg.com/thumbs2/ori_3466824_a9732c776474da0879cdca4212b393622e902df7_happy-people-logo-template.png'), url('https://riseon.happypeopleai.com/images/riseonTwitterPreview.png');
+            background-position: left top, right bottom, center center;
+            background-repeat: no-repeat;
+            background-size: 200px 200px, 200px 200px, 200px 200px;
+            border: 2px solid black;
+            margin: 30px;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 35px;
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="multi-bg">
+        <p><strong>Multiple background images applied to this div.</strong></p>
+    </div>
+
+</body>
+
+</html>

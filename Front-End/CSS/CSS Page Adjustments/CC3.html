@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Scroll Behavior</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        a {
+            display: block;
+            margin: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+        
+        #bottom {
+            margin-top: 1200px;
+            /* Creates scrollable space */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top anchor point -->
+    <div id="top"></div>
+
+    <a href="#bottom">Click to go to bottom of page</a>
+
+    <p>Scroll content here... (add more content as needed)</p>
+
+    <div id="bottom">
+        <a href="#top">Click to go to top of page</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Visibility and Display</title>
+    <style>
+        .hidden {
+            visibility: hidden;
+        }
+        
+        .visible {
+            visibility: visible;
+        }
+        
+        .collapse {
+            visibility: collapse;
+        }
+        
+        .none {
+            display: none;
+        }
+        
+        .inline {
+            display: inline;
+        }
+        
+        .block {
+            display: block;
+        }
+        
+        .contents {
+            display: contents;
+        }
+        
+        .list-item {
+            display: list-item;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Visibility Demo</h3>
+    <p class="hidden">I am hidden (space preserved).</p>
+    <p class="visible">I am visible.</p>
+    <p class="collapse">I am collapsed (used mainly in tables).</p>
+
+    <h3>Display Demo</h3>
+    <div class="none">You won’t see me (not in layout).</div>
+    <div class="inline">I am inline.</div>
+    <div class="block">I am block.</div>
+    <div class="contents"><span>I inherit parent's box.</span></div>
+    <ul>
+        <li class="list-item">List-style shown.</li>
+    </ul>
+</body>
+
+</html>
