@@ -1,0 +1,5 @@
+Python is a powerful high-level programming language.
+It is widely used in data science, web development, automation, and scripting.
+File handling is one of the core features of Python.
+With Python, you can read, write, and manipulate files easily.
+This file is used to test various file handling operations in Python.
