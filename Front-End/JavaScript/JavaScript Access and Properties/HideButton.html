@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Hide Button
+        </title>
+    </head>
+    <body>
+        <h1>Hide Button</h1>
+        <button onclick="hideButton(this)">Hide Button</button>
+        <script>
+            function hideButton(button){
+                button.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
+
+//"this" keyword in the button onClick funtions refers to the the button element itself, hence its display style is set to none to hide it.
