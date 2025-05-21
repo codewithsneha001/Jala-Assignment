@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .transparent-img {
+            width: 300px;
+            height: auto;
+            opacity: 0.6;
+            /* 60% visible */
+            transition: opacity 0.3s ease;
+            background-position: center;
+        }
+        
+        .transparent-img:hover {
+            opacity: 1;
+            /* Fully visible on hover */
+        }
+        
+        h2 {
+            text-align: center;
+        }
+        /* .transparent-img img {
+            background-position: center center;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <h2>Image with Opacity</h2>
+
+    <img src="https://seeklogo.com/images/H/happy-people-logo-153C1148B9-seeklogo.com.png" alt="Sample Image" class="transparent-img">
+
+</body>
+
+</html>

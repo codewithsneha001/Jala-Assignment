@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pagination</title>
+    <style>
+        ul.pagination {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin-top: 40px;
+        }
+        
+        ul.pagination li {
+            margin: 0 5px;
+            /* With space */
+        }
+        
+        ul.pagination.no-space li {
+            margin: 0;
+            /* Without space */
+        }
+        
+        ul.pagination li a {
+            display: block;
+            padding: 8px 12px;
+            background-color: lightblue;
+            text-decoration: none;
+            color: black;
+            border: 1px solid blue;
+        }
+        
+        ul.pagination li a:hover {
+            background-color: deepskyblue;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>Pagination with Space</h3>
+    <ul class="pagination">
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+    </ul>
+
+    <h3>Pagination without Space</h3>
+    <ul class="pagination no-space">
+        <li><a href="#">A</a></li>
+        <li><a href="#">B</a></li>
+        <li><a href="#">C</a></li>
+    </ul>
+
+</body>
+
+</html>

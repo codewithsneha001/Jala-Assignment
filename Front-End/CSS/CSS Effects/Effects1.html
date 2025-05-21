@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .image-box {
+            width: 300px;
+            padding: 10px;
+            margin: 40px auto;
+            border: 1px solid #ccc;
+            box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+            /* Initial shadow */
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            text-align: center;
+        }
+        
+        .image-box:hover {
+            box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+            /* Bigger shadow on hover */
+            transform: scale(1.05);
+            /* Slight zoom */
+            cursor: pointer;
+        }
+        
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="image-box">
+        <img src="https://i.ytimg.com/vi/h8KmDHVjIBU/maxresdefault.jpg" alt="Sample Image">
+        <p>Hover over the image to see the shadow effect</p>
+    </div>
+
+</body>
+
+</html>

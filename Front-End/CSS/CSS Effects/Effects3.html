@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Positions</title>
+    <style>
+        .box {
+            width: 120px;
+            height: 80px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .static-box {
+            background-color: grey;
+            position: static;
+        }
+        
+        .relative-box {
+            background-color: teal;
+            position: relative;
+            top: 7.5px;
+            left: 30px;
+        }
+        
+        .absolute-container {
+            position: relative;
+            height: 140px;
+            border: 2px dashed black;
+        }
+        
+        .absolute-box {
+            background-color: orange;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        
+        .fixed-box {
+            background-color: crimson;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+        }
+        
+        .sticky-box {
+            background-color: forestgreen;
+            position: sticky;
+            top: 0;
+        }
+        
+        .long-content {
+            height: 1200px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box static-box">Static</div>
+
+    <div class="box relative-box">Relative</div>
+
+    <div class="absolute-container">
+        <div class="box absolute-box">Absolute</div>
+    </div>
+
+    <div class="box fixed-box">Fixed</div>
+
+    <div class="long-content">
+        <div class="box sticky-box">Sticky</div>
+        <p>Scroll down to see sticky effect.</p>
+        <p>Keep scrolling to notice the sticky box sticks at the top.</p>
+    </div>
+
+</body>
+
+</html>
