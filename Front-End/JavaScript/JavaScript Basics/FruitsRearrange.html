@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Fruits Rearrange JALA
+        </title>
+    </head>
+    <body>
+        <h1>Fruits Rearrange</h1>
+        <ul id="fruitRearrangeButton"></ul>
+        <p>Click on the button to rearrange the fruits</p>
+        <button onclick="rearrange()">Rearrange</button>
+        <script>
+            const fruits = ["Apple", "Orange", "Banana", "Mango", "Grapes", "Watermelon", "Strawberry", "Pineapple", "Kiwi", "Cherry"];
+            //function to display the fruits
+            function displayFruits(){
+                const list = document.getElementById("fruitRearrangeButton");
+                list.innerHTML = "";
+                fruits.forEach(fruit=>{
+                    const listItem = document.createElement("li");
+                    listItem.innerText = fruit;
+                    list.appendChild(listItem);
+                })
+            }
+            //function to rearrange the fruits
+            function rearrange(){
+                fruits.sort().reverse();
+                displayFruits()
+            }
+            displayFruits()//display the fruits initially
+        </script>
+    </body>
+</html>
