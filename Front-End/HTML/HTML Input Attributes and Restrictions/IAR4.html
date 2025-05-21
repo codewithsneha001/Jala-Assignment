@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Using Target Attribute</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+        
+        a {
+            display: block;
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Target Attribute Examples</h1>
+
+    <p><strong>Click the links below to see how the target attribute works:</strong></p>
+
+    <!-- Opens in same tab -->
+    <a href="https://www.wikipedia.org" target="_self">Open Wikipedia in same tab (_self)</a>
+
+    <!-- Opens in new tab -->
+    <a href="https://www.google.com" target="_blank">Open Google in new tab (_blank)</a>
+
+    <!-- Opens in an iframe below -->
+    <a href="https://www.example.com" target="myframe">Open Example.com in iframe (target="myframe")</a>
+
+    <hr />
+
+    <!-- Iframe to display link content -->
+    <iframe name="myframe" width="100%" height="300px" style="border: 1px solid black;"></iframe>
+
+    <!-- Open link in a named window (popup) -->
+    <a href="https://www.wikipedia.org" target="popup">Open Wikipedia in a popup</a>
+
+    <!-- Open in the topmost frame (_top) -->
+    <a href="https://www.wikipedia.org" target="_top">Open in top frame (removes all frames)</a>
+
+    <!-- Open in parent frame (_parent) -->
+    <a href="https://www.wikipedia.org" target="_parent">Open in parent frame</a>
+
+
+</body>
+
+</html>

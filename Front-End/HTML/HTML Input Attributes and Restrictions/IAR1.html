@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Types Example</title>
+
+</head>
+
+<body>
+
+    <h2>Form with All Basic Input Types</h2>
+    <form action="#" method="post">
+
+        <!-- Text input -->
+        <div class="form-section">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required />
+        </div>
+        <br>
+        <!-- Password input -->
+        <div class="form-section">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required />
+        </div>
+        <br>
+        <!-- Radio buttons -->
+        <div class="form-section">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+        </div>
+        <br>
+        <!-- Checkbox -->
+        <div class="form-section">
+            <label>Languages Known:</label>
+            <input type="checkbox" id="english" name="language" value="English" />
+            <label for="english">English</label>
+            <input type="checkbox" id="hindi" name="language" value="Hindi" />
+            <label for="hindi">Hindi</label>
+            <input type="checkbox" id="telugu" name="language" value="Telugu" />
+            <label for="telugu">Telugu</label>
+        </div>
+        <br>
+        <!-- Submit and Reset buttons -->
+        <div class="form-section">
+            <input type="submit" class="btn" value="Submit" />
+            <input type="reset" class="btn" value="Reset" />
+        </div>
+        <br>
+        <!-- Button (not submit, just a clickable button) -->
+        <div class="form-section">
+            <input type="button" class="btn" value="Click Me" onclick="alert('Button Clicked!')" />
+        </div>
+
+    </form>
+</body>
+
+</html>

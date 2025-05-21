@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Input Restrictions Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        input {
+            margin: 10px 0;
+            padding: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Apply all of the below input restrictions disabled, max, 
+        maxlength, min, readonly,required, size, value -->
+    <h2>Input Restrictions Demo</h2>
+
+    <!-- 1. Disabled input (user can't interact) -->
+    <label>Disabled Input:</label><br>
+    <input type="text" value="Can't edit" disabled><br>
+
+    <!-- 2. Max and Min restriction (for number input) -->
+    <label>Age (Min: 18, Max: 60):</label><br>
+    <input type="number" min="18" max="60"><br>
+
+    <!-- 3. Maxlength (limit characters typed) -->
+    <label>Username (Max 10 characters):</label><br>
+    <input type="text" maxlength="10"><br>
+
+    <!-- 4. Readonly (visible but can't change) -->
+    <label>Readonly Input:</label><br>
+    <input type="text" value="Read only text" readonly><br>
+
+    <!-- 5. Required (must be filled before submitting) -->
+    <form>
+        <label>Email (Required):</label><br>
+        <input type="email" required><br>
+
+        <!-- 6. Size (visible width of input box) -->
+        <label>Short Input (Size 5):</label><br>
+        <input type="text" size="5"><br>
+
+        <!-- 7. Value (pre-filled input) -->
+        <label>City (Pre-filled):</label><br>
+        <input type="text" value="Hyderabad"><br>
+
+        <!-- Submit button to show required field behavior -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

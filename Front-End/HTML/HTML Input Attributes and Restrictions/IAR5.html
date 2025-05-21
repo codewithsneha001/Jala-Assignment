@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iframe and Marquee Enhanced</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #e6f2ff;
+        }
+        
+        iframe {
+            width: 90%;
+            height: 400px;
+            border: 3px solid #333;
+            margin-top: 20px;
+        }
+        
+        marquee {
+            background-color: #28a745;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        
+        img {
+            height: 60px;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Scrolling Text and Image + Embedded Page</h1>
+
+    <!-- Scrolling text -->
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        📢 Welcome to Our Website! Stay tuned for updates!
+    </marquee>
+
+    <!-- Scrolling images -->
+    <marquee behavior="scroll" direction="right" scrollamount="4">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia">
+        <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="HTML5 Logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS3 Logo">
+    </marquee>
+
+    <!-- Iframe example: Embed Google or other site -->
+    <h2>Embedded Example Website Using Iframe</h2>
+    <iframe src="https://www.wikipedia.org" title="W3Schools Homepage "></iframe>
+
+</body>
+
+</html>
