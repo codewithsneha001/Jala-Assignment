@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cookie Example</title>
+</head>
+
+<body>
+
+    <h2>Cookie Demo</h2>
+    <p id="cookieMsg"></p>
+    <button onclick="checkCookie()">Check Cookie</button>
+
+    <script>
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)); // Expiry time
+            const expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            const name = cname + "=";
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i].trim();
+                if (c.indexOf(name) === 0) {
+                    return c.substring(name.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            const username = getCookie("username");
+            const message = document.getElementById("cookieMsg");
+            if (username !== "") {
+                message.textContent = "Welcome back, " + username + "!";
+            } else {
+                const name = prompt("Please enter your name:");
+                if (name !== "" && name !== null) {
+                    setCookie("username", name, 7);
+                    message.textContent = "Cookie has been set. Welcome, " + name + "!";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Validation Example</title>
+</head>
+
+<body>
+
+    <h2>Form Validation</h2>
+
+    <form onsubmit="return validateForm()">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value.trim();
+            if (name === "") {
+                alert("Text box should not be empty!");
+                return false; // stops form submission
+            }
+            return true; // allows form submission
+        }
+    </script>
+
+</body>
+
+</html>
