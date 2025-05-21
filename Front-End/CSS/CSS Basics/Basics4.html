@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Height and Width Example</title>
+    <style>
+        /* Page background */
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        /* Container using percentage */
+        
+        .container {
+            width: 80%;
+            /* 80% of the body width */
+            height: 50vh;
+            /* 50% of the viewport height */
+            background-color: #c8e6c9;
+            margin: 20px auto;
+            padding: 10px;
+            border: 2px solid #2e7d32;
+        }
+        /* Box using pixel values */
+        
+        .box-px {
+            width: 300px;
+            height: 150px;
+            background-color: #ffcc80;
+            border: 2px dashed #ef6c00;
+            margin: 10px auto;
+            text-align: center;
+            line-height: 150px;
+        }
+        /* Box using percentage inside container */
+        
+        .box-percent {
+            width: 60%;
+            /* 60% of the container's width */
+            height: 50%;
+            /* 50% of the container's height */
+            background-color: #90caf9;
+            border: 2px dotted #1e88e5;
+            margin: 10px auto;
+            text-align: center;
+            line-height: calc(50vh * 0.5);
+            /* half of container height */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Container (width: 80%, height: 50vh)</h2>
+
+        <div class="box-px">Box in px (300x150)</div>
+
+        <div class="box-percent">Box in % (60% width, 50% height)</div>
+    </div>
+
+</body>
+
+</html>

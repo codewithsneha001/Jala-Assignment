@@ -1,0 +1,35 @@
+body {
+    background-color: lightskyblue;
+    justify-content: center;
+    /* horizontal center*/
+    align-items: center;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    border-top: 5px solid red;
+    /* Solid top */
+    border-right: 5px dotted green;
+    /* Dotted right */
+    border-bottom: 5px dashed blue;
+    /* Dashed bottom */
+    border-left: 5px double purple;
+    /* Double left */
+    text-align: center;
+    line-height: 200px;
+    /* center text vertically */
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 30px;
+    padding: 20px 20px;
+}
+
+h1 {
+    color: indigo;
+    text-align: center;
+}
