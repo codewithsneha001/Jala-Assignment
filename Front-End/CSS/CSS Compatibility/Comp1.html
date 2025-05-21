@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .table-fixed {
+            width: 500px;
+            table-layout: fixed;
+            /* Forces fixed layout */
+            border-collapse: collapse;
+        }
+        
+        .table-fixed th,
+        .table-fixed td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        .table-auto {
+            width: 500px;
+            table-layout: auto;
+            /* Default layout */
+            border-collapse: collapse;
+            margin-top: 40px;
+        }
+        
+        .table-auto th,
+        .table-auto td {
+            border: 1px solid #666;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Table with <code>table-layout: fixed</code></h2>
+    <table class="table-fixed">
+        <tr>
+            <th style="width: 150px;">Name</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>This is a very long address that will be cut off.</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Another long address to show ellipsis.</td>
+        </tr>
+    </table>
+
+    <h2>Table with <code>table-layout: auto</code></h2>
+    <table class="table-auto">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>This is a very long address that stretches the column.</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td>Another long address for comparison.</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* 3 equal columns */
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .grid-item {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        
+        .asymmetrical-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            /* 2:1 ratio */
+            gap: 15px;
+        }
+        
+        .nested-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .nested-grid .grid-item {
+            background-color: #2196F3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Simple 3-Column Grid</h2>
+    <div class="grid-container">
+        <div class="grid-item">Box 1</div>
+        <div class="grid-item">Box 2</div>
+        <div class="grid-item">Box 3</div>
+        <div class="grid-item">Box 4</div>
+        <div class="grid-item">Box 5</div>
+        <div class="grid-item">Box 6</div>
+    </div>
+
+    <h2>Asymmetrical Grid (2:1 Columns)</h2>
+    <div class="asymmetrical-grid">
+        <div class="grid-item">Wider Column</div>
+        <div class="grid-item">Narrow Column</div>
+    </div>
+
+    <h2>Nested Grid Inside a Grid</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            Parent Box
+            <div class="nested-grid">
+                <div class="grid-item">Child 1</div>
+                <div class="grid-item">Child 2</div>
+            </div>
+        </div>
+        <div class="grid-item">Box 2</div>
+        <div class="grid-item">Box 3</div>
+    </div>
+
+</body>
+
+</html>
